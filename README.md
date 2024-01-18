@@ -1,2 +1,2 @@
 # LaSPA
- SPA like website made for School
+ SPA like website made for School 📚💭
