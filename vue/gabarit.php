@@ -39,7 +39,7 @@
         <div class="header-menu">
             <button type="button" class="header-menuexit">
                 <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none"
-                    stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    stroke="#B3D580" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                     <circle cx="12" cy="12" r="10"></circle>
                     <line x1="15" y1="9" x2="9" y2="15"></line>
                     <line x1="9" y1="9" x2="15" y2="15"></line>
@@ -53,11 +53,30 @@
         </div>
 
         <button type="button" class="header-burgericon">
-            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#000"
-                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <line x1="3" y1="12" x2="21" y2="12"></line>
-                <line x1="3" y1="6" x2="21" y2="6"></line>
-                <line x1="3" y1="18" x2="21" y2="18"></line>
+            <svg width="41" height="32" viewBox="0 0 41 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_5_8)">
+                    <path d="M38.5 29.6364L17.5 29.6364" stroke="#B3D580" stroke-width="2" />
+                </g>
+                <rect x="17.5" y="28.2727" width="21" height="2.72727" stroke="#B3D580" stroke-width="1" />
+                <g clip-path="url(#clip1_5_8)">
+                    <path d="M38.5 2.36363H0.5" stroke="#B3D580" stroke-width="2" />
+                </g>
+                <rect x="1.5" y="1" width="38" height="2.72727" stroke="#B3D580" stroke-width="1" />
+                <g clip-path="url(#clip2_5_8)">
+                    <path d="M38.5 16H8.5" stroke="#B3D580" stroke-width="2" />
+                </g>
+                <rect x="8.5" y="14.6364" width="30" height="2.72727" stroke="#B3D580" stroke-width="1" />
+                <defs>
+                    <clipPath id="clip0_5_8">
+                        <rect x="17.5" y="28.2727" width="21" height="2.72727" fill="white" />
+                    </clipPath>
+                    <clipPath id="clip1_5_8">
+                        <rect x="1.5" y="1" width="38" height="2.72727" fill="white" />
+                    </clipPath>
+                    <clipPath id="clip2_5_8">
+                        <rect x="8.5" y="14.6364" width="30" height="2.72727" fill="white" />
+                    </clipPath>
+                </defs>
             </svg>
         </button>
     </header>

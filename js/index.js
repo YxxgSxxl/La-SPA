@@ -35,10 +35,8 @@ window.matchMedia("(orientation: portrait)").addEventListener("change", e => {
             if (window.innerHeight < window.innerWidth) {
                 alert("Pour une meilleure expérience, veuillez naviguer sur ce site en mode portrait. (FR)");
             }
-        
             setTimeout(phoneLandscapeMode, 60000); // Every 1 minutes, it will repeat in landscape mode
         }
-        
         setTimeout(phoneLandscapeMode, 1000); // Time it takes to make the alert when landscape mode is detected
     }
 });

@@ -13,7 +13,6 @@ require "gabarit.php";
 </head>
 
 <body>
-
     <div class="p1-container">
         <div class="p1-gauche">
             <h1>Offrez <span class="span-cercle">un cocon</span> à une adorable boule de poils.</h1>
@@ -36,7 +35,23 @@ require "gabarit.php";
     </div>
 
     <div class="p2-container">
-        
+        <div class="p2-gauche">
+            <div class="img-gauche1">
+                <p>Trouver votre compagnon</p>
+                <img src="./img/p2-gauche1.png" alt="Trouver votre compagnion dame qui est sereine">
+            </div>
+        </div>
+
+        <div class="p2-droite">
+            <div class="img-droite1">
+                <p>Nous soutenir</p>
+                <img src="./img/p2-droite1.png" alt="Boite de donation">
+            </div>
+            <div class="img-droite2">
+                <p>Apprendre à nous connaitre</p>
+                <img src="./img/p2-droite2.png" alt="6 mains entre-croisées">
+            </div>
+        </div>
     </div>
 
 </body>
