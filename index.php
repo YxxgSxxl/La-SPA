@@ -19,6 +19,15 @@ if (isset($_GET["action"])) {
         if ($_GET["action"] == "contact") {
             contact();
         }
+        if ($_GET["action"] == "conditions") {
+            conditions();
+        }
+        if ($_GET["action"] == "login") {
+            login();
+        }
+        if ($_GET["action"] == "register") {
+            register();
+        }
     } catch (Exception $e) {
         erreur($e->getMessage());
     }
