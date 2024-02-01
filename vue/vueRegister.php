@@ -14,22 +14,22 @@ if (isset($_POST['submit'])) {
             $user = htmlspecialchars($_POST['user']);
             $mail = htmlspecialchars($_POST['mail']);
             $pass = sha1($_POST['pass']);
-            $insertUser = $bdd->prepare('INSERT INTO parrainage(idParrainage, idAnimal, nom, prenom, adressemail, adresse, numtel, mdp) VALUES(?, "", "", "", ?, "", "", ?);');
+            $insertUser = $bdd->prepare('INSERT INTO parrainage(user, nom, prenom, adressemail, adresse, numtel ,mdp) VALUES( ?, "", "", ?, "", "", ?);');
             $insertUser->execute(array($user, $mail, $pass));
-
+            var_dump($user,$mail,$pass);
             
             // Récupère et créer les cookies de session de l'utilisateur qui a créer son compte
-            $recupUser = $bdd->prepare('SELECT * FROM parrainage WHERE idParrainage = ? AND adressemail = ? AND mdp = ?');
+            $recupUser = $bdd->prepare('SELECT * FROM parrainage WHERE user = ? AND adressemail = ? AND mdp = ?');
             $recupUser->execute(array($user, $mail, $pass));
             if ($recupUser->rowCount() > 0) {
-                $_SESSION['user'] = $user;
+                // $_SESSION['user'] = $user;
+                $_SESSION['user'] = $recupUser->fetch()['user'];
                 $_SESSION['mail'] = $mail;
                 $_SESSION['pass'] = $pass;
-                $_SESSION['sid'] = $recupUser->fetch()['sid'];
+                // $_SESSION['idParrainage'] = $recupUser->fetch()['idParrainage'];
             }
-
             // echo $_SESSION['sid']; // <-- Debugging
-
+            // echo $_SESSION['user']; // <-- Debugging
 
             $message = "<span style='color: green;'>Bravo, Tu es maintenant inscrit sur La SPA !</span>";
         } else if (empty($_POST['checkbox'])) {

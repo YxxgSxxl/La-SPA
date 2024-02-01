@@ -17,14 +17,15 @@ if (isset($_SESSION['user'])) {
             $user = htmlspecialchars($_POST['user']);
             $pass = sha1($_POST['pass']);
 
-            $recupUser = $bdd->prepare('SELECT * FROM parrainage WHERE idParrainage = ? AND mdp = ?');
+            $recupUser = $bdd->prepare('SELECT * FROM parrainage WHERE user = ? AND mdp = ?');
             $recupUser->execute(array($user, $pass));
 
             if ($recupUser->rowCount() > 0) {
+                $_SESSION['user'] = $recupUser->fetch()['user'];
                 $_SESSION['user'] = $user;
                 $_SESSION['pass'] = $pass;
-                $_SESSION['sid'] = $recupUser->fetch()['sid'];
-                // echo $_SESSION['sid']; // <-- Debugging
+                // $_SESSION['idParrainage'] = $recupUser->fetch()['idParrainage']; // <-- DebuggingV1
+                // echo $_SESSION['sid']; // <-- DebuggingV2
 
                 header("Location: index.php?ation=accueil");
                 die(); // Empêche la suite de l'execution du script

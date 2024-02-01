@@ -14,6 +14,9 @@ require "gabarit.php";
 </head>
 
 <body>
+    <h1 style="text-align: center;">Qui sommes nous ?</h1>
+
+    <p></p>
 
 
     <?php
