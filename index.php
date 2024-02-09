@@ -2,6 +2,8 @@
 require "config/config.php";
 require "controller/controller.php";
 
+
+
 if (isset($_GET["action"])) {
     try {
         if ($_GET["action"] == "accueil") {
@@ -27,6 +29,9 @@ if (isset($_GET["action"])) {
         }
         if ($_GET["action"] == "register") {
             register();
+        }
+        if ($_GET["action"] == "animal" &&isset($_GET['id'])) {
+                pageAnimal($_GET['id']);
         }
     } catch (Exception $e) {
         erreur($e->getMessage());

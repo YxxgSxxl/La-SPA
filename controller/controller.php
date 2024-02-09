@@ -4,6 +4,8 @@ require "./model/model.php";
 
 // Fonction qui renvoie à la page d'accueil
 function accueil() {
+    $tableAnimaux = getAnimaux();
+
     require "vue/vueAccueil.php";
 }
 
@@ -14,6 +16,8 @@ function apropos() {
 
 // Fonction qui renvoie à la page d'adoption
 function adopter() {
+    $tableAnimaux = getAnimaux();
+
     require "vue/vueAdopter.php";
 }
 
@@ -45,6 +49,13 @@ function register() {
 // Fonction qui renvoie à la page de profile utilisateur
 function profil() {
     require "vue/vueProfil.php";
+}
+
+function pageAnimal($idAnimal) {
+    $tableAnimal = getAnimal($idAnimal);
+
+
+    require "vue/vueAnimal.php";
 }
 
 // Fonction qui renvoie à la page d'erreurs

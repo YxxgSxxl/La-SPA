@@ -47,23 +47,32 @@ require "gabarit.php";
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>La SPA - Adopter</title>
+    <link rel="stylesheet" href="./stylesheet/register-login.css">
 </head>
 
 <body>
-    <h1>Connectez vous</h1>
-    <form method="POST" action="">
-        <label for="user">Nom d'utilisateur<span style="color: red;">*</span> :</label>
-        <input type="text" name="user" autocomplete="on" placeholder="Nom d'utilisateur">
-        <br>
-        <label for="pass">Mot de passe<span style="color: red;">*</span> :</label>
-        <input type="password" name="pass" autocomplete="on" placeholder="Mot de passe">
-        <br><br>
-        <input type="submit" name="submit">
-        <p>J'aimerais me <a href="index.php?action=register">créer un compte</a></p>
-        <div class="infoLogin">
-            <?= $erreur ?>
+    <main>
+        <h1>Connectez vous</h1>
+
+        <div class="form-box">
+            <div class="form-container">
+                <form class="form" method="POST" action="">
+                    <label for="user">Nom d'utilisateur<span style="color: red;">*</span> :</label>
+                    <input class="input" type="text" name="user" autocomplete="on" placeholder="Nom d'utilisateur">
+                    <br>
+                    <label for="pass">Mot de passe<span style="color: red;">*</span> :</label>
+                    <input class="input" type="password" name="pass" autocomplete="on" placeholder="Mot de passe">
+                    <br><br>
+                    <input class="submit-btn" type="submit" name="submit">
+                    <p>J'aimerais me <a href="index.php?action=register">créer un compte</a></p>
+                    <div class="infoLogin">
+                        <?= $erreur ?>
+                    </div>
+                </form>
+            </div>
         </div>
-    </form>
+    </main>
+
 
 </body>
 

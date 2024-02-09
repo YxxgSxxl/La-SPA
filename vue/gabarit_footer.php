@@ -17,7 +17,7 @@
             <li><a class='f-lien' href='index.php?action=contact'>Contact</a></li>
             <li><a class='f-lien' href='index.php?action=login'>Se connecter</a></li>
         </ul>
-        <h4>Nos réseaux sociaux !</h4>
+        <h4 class='nrs'>Nos réseaux sociaux !</h4>
         <div class="fp2-socials">
             <!-- instagram -->
             <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="50" viewBox="0 0 32 32">
@@ -37,12 +37,12 @@
         <h4>Pour plus d'informations</h4>
         <ul>
             <li><a class='f-lien' href='https://www.la-spa.fr/la-spa-en-france/'>Toutes les SPA de France</a></li>
-            <li><a class='f-lien' href='index.php?action=apropos'>Mentions légales</a></li>
-            <li><a class='f-lien' href='index.php?action=adopter'>Conditions générales d'utilisation</a></li>
+            <li><a class='f-lien' href='index.php?action=conditions#mentionslegales'>Mentions légales</a></li>
+            <li><a class='f-lien' href='index.php?action=conditions#conditionsutilisation'>Conditions générales d'utilisation</a></li>
         </ul>
         <div class="f-buttons">
             <a href="index.php?action=adopter" style="text-decoration: none;"><span class="span-footer1">Je veux adopter</span></a>
-            <a href="" style="text-decoration: none;"><span class="span-footer2">Soutenir 1 SPA</span></a>
+            <a href="" style="text-decoration: none;"><span class="span-footer2">Soutenir une SPA</span></a>
         </div>
     </div>
 </footer>
